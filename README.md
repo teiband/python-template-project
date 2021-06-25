@@ -11,3 +11,16 @@ Pytest is recommended and can be invoked anywhere in the project or `tests` dire
 ## Installation
 Use `pip install .` or `pip install -e .` in the project directory.
 Installation instructions are defined in `setup.py`
+
+## Development
+Consider creation of a poetry package with
+```
+poetry init
+```
+
+Use `pytest` for testing, e.g. run in project root to execute all found tests in `tests` directory
+
+```
+pytest
+```
+
