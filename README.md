@@ -13,14 +13,29 @@ Use `pip install .` or `pip install -e .` in the project directory.
 Installation instructions are defined in `setup.py`
 
 ## Development
-Consider creation of a poetry package with
+### Poetry
+Edit `pyproject.toml` or delete it and init a new poetry package with
 ```
 poetry init
 ```
 
-Use `pytest` for testing, e.g. run in project root to execute all found tests in `tests` directory
+Install the project dependencies in a venv
+```
+poetry install
+```
+
+Add a dependency from a repository and provide correct branch name (master/main)
+```
+poetry add git+ssh://git@github.com/teiband/some-package.git#main
+```
+Edit `pyproject.toml` to make the package editable if required (develop option)
+```
+some-package = {git = "git@github.com/teiband/some-package.git", develop = true}
+```
+
+After you made changes, run
 
 ```
-pytest
+poetry update
 ```
 
