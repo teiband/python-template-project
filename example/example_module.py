@@ -1,1 +1,3 @@
-print("I am the example module")
+
+if __name__ == "__main__":
+    print("I am the main from the example_module")
