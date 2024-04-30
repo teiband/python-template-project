@@ -1,8 +1,8 @@
-# python-sample-project
+# python-template-project
 A skeleton for new python packages
 
 ## Source Code
-Goes into a directory with the package name, e.g. `sample`
+Goes into a directory with the package name, e.g. `example`
 
 ## Tests
 Go into a directory called `tests`.
